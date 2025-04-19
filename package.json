@@ -1,0 +1,27 @@
+{
+  "name": "food-ordering",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cd server && npm start",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "test-server": "cd server && npm test",
+    "test-client": "cd client && npm test",
+    "test": "npm run test-server && npm run test-client",
+    "lint-server": "cd server && npm run lint",
+    "lint-client": "cd client && npm run lint",
+    "lint": "npm run lint-server && npm run lint-client"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+    
+    
+  }
+}
